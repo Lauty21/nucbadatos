@@ -1,0 +1,506 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+:root{
+   --yellow: #f7de82;
+   --blue: #0c4ea2;
+   --bold: 900;
+   --medium: 700;
+   --regular: 400;
+   --thin: 300;
+}
+
+body{
+    width: 100vw;
+    max-width: 100%;
+    font-family: "poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+*img{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    background-color: var(--yellow);
+    padding: 3rem 1rem 8rem 1rem;
+}
+
+.logo{
+    width: 400px;
+}
+
+/** menu **/
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu i{
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.conteiner-items{
+    order: 1;
+    width: 100%;
+}
+
+.items{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    display: none;
+}
+
+.item a{
+    color: var(--blue);
+}
+
+.items a:visited{
+    color: var(--blue);
+}
+
+/* Terminado el menu */
+
+/* Section 1 About */
+
+.about-section{
+    background: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-img{
+    width: 350px;
+}
+
+.about-content p{
+    font-size: 1.5rem;
+    font-weight: var(--thin);
+    margin: 1rem 0 4rem 0;
+}
+
+.btn-hero{
+    background: var(--blue);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.about-img{
+    width: 70%;
+    margin: 5rem auto;
+}
+
+/* Terminada la section 1 */
+
+/* Section 2 description */
+
+.description-section{
+    background: var(--blue);
+    padding: 8rem;
+}
+
+.description-section h2{
+    color: var(--yellow);
+    font-size: 3rem;
+    text-align: center;
+    font-weight: var(--medium);
+    text-transform: uppercase;
+}
+
+.description-section p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    max-width: 300px;
+    margin: 4rem auto 10rem auto;
+}
+
+.Info-card{
+    width: 40%;
+    margin-bottom: 1rem;
+}
+
+.card-conteiner{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Terminada la seccion 2 */
+
+/* Seccion 3 productos */
+
+.products-section{
+    padding: 8rem;
+}
+
+.products-section h2{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--blue);
+}
+
+.products-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.products img{
+    max-width: 200px;
+}
+
+.products{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    padding: 1rem 0;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px 5px rgba( 0, 0, 0, 0.1) ;
+    position: relative;
+}
+
+.product-title{
+    text-transform: uppercase;
+    font-size: 2rem;
+    max-width: 200px;
+    margin-top: 1.5rem;
+}
+
+.product-price{
+    color: var(--blue);
+    font-weight: var(--medium);
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+
+/* .upper{
+    text-transform: uppercase;
+} */
+
+.btn-products{
+    background: var(--yellow);
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    padding: 1rem 5rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+.sin-stock{
+    text-transform: uppercase;
+    background: red;
+    color: white;
+    padding: 1rem 1.3rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+}
+
+.disabled{
+    background: #f3f3f3;
+    cursor: no-drop;
+}
+
+/* terminada la seccion 3 */
+
+/* Seccion 4 carrito */
+
+.cart-section{
+    background: #f3f3f3;
+    padding: 4rem 0;
+}
+
+.cart-section h2{
+    font-size: 3.5rem;
+    text-align: center;
+    color: var(--blue);
+}
+
+.cart-section p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--blue);
+    margin: 1.5rem 0 2rem 0;
+}
+
+.Item-img{
+    width: 50px;
+}
+
+.cart-container{
+    background: white;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    color: var(--blue);
+    border-radius: 1rem;
+}
+
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-price{
+    font-size: 2rem;
+    font-weight: var(--medium);
+}
+
+.cart-title{
+    font-weight: var(--thin);
+}
+
+.total-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--blue);
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+}
+
+/* Terminada seccion 4 */
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--blue);
+    color: white;
+    padding: 8rem 0;
+    gap: 50px;
+}
+
+.footer-img{
+    width: 15rem;
+    margin-bottom: 2rem;
+}
+
+.contacto{
+    margin-bottom: 2rem;
+}
+
+.contacto a{
+    color: white;
+}
+
+.legales{
+    max-width: 280px;
+    margin-top: 1rem 0;
+}
+
+/* Mediaqueries desktop */
+
+ /* @media screen and (min-width:1024px) {
+    body{
+        background: red;
+    }
+ } */
+  @media (min-width: 1024px) {
+   /* Menu */
+   .menu{
+    flex-wrap: nowrap;
+    justify-content: space-around;
+   }
+   .conteiner-items{
+    display: flex;
+    justify-content:flex-end;
+    gap: 50px;
+   }
+   .items{
+    display: flex;
+   }
+   .btn-container{
+    display: none;
+   }
+
+    /*seccion 1 about  */
+    .about-section{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .about-content{
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 70%;
+    }
+
+    .about-content p{
+        text-align: left;
+        max-width: 700px;
+    }
+
+    .about-img{
+        max-width: 500px;
+       padding: 1rem;
+       margin: 0;
+    }
+
+    /*seccion 2  */
+
+    .description-section{
+        padding-bottom: 0;
+    }
+
+    .card-conteiner{
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .description-section p{
+        max-width: 500px;
+    }
+
+    /* seccion 3 products */
+
+    .products-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin: 8rem auto 0 auto;
+        gap: 50px;
+    }
+
+    .products{
+        margin: 0;
+    }
+
+    /* Seccion 4 carrito */
+
+    .cart-section p{
+        max-width: 900px;
+        margin: 2rem auto;
+    }
+
+    .cart-container{
+        max-width: 1000px;
+    }
+
+    /* footer */
+
+    .info-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        text-align: center;
+        font-size: 1.2rem;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .contacto{
+        width: 50%;
+    }
+
+    .legales{
+        width: 50%;
+    }
+
+    /* clase 13 - aplicamos pseudo elementos/clases al pedi */
+    /* Vamos a hacer un efecto con hover + after, el efecto va a consistir que cuando pase el mouse
+     por encima del elmento me dibuje una linea y desaparezca */
+
+    .items{
+        position: relative;
+        padding: 0;
+    }
+
+    .menu .item-links::after{
+        content: "";
+        height: 3px;
+        background: var(--blue);
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.15s linear;
+    }
+
+    .menu .item-links:hover::after{
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
+    /* algun efectito con el hover */
+
+    .cokemon:hover {
+        transform: rotate(360deg);
+        transition: transform 1.5s ease;
+    }
+
+    .btn-products:hover {
+        background: #816501;
+        transition: all 0.5s ease;
+    }
+
+    .Item-img:hover{
+        transform: rotate(360deg);
+        transition: transform 1.5s ease;
+    }
+
+    /* ejempl de scale alto para ver que pasa */
+
+    .btn-hero:hover{
+        /* transform: scale(2); */
+        transition: all 1s ease;
+        /* transform: translate(20px , 20px); */
+        transform: translateX(20px);
+    }
+
+  }
